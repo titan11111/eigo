@@ -49,8 +49,7 @@ function setCharacterImage() {
 }
 
 function startGame() {
-    let available = allQuestions.filter(q => !correctlyAnswered.includes(q.id));
-    if (available.length < 10) available = allQuestions;
+    let available = allQuestions;
     questions = shuffleArray([...available]).slice(0, 10);
     current = 0;
     score = 0;
@@ -62,7 +61,7 @@ function startGame() {
 function showQuestion() {
     const q = questions[current];
     questionNumber.textContent = `Q${current + 1}`;
-    const blanked = q.sentence.replace(q.answer, "( ___ )");
+    const blanked = q.sentence.replace("( ___ )", "( ___ )");
     questionText.textContent = blanked;
     translationText.textContent = q.translation;
     resultDiv.textContent = "";
@@ -84,7 +83,6 @@ function checkAnswer(selected, q) {
     if (selected === q.answer) {
         score++;
         seikaiSound.play().catch(e => console.error('正解音再生エラー:', e));
-        if (!correctlyAnswered.includes(q.id)) correctlyAnswered.push(q.id);
     } else {
         fuseikaiSound.play().catch(e => console.error('不正解音再生エラー:', e));
     }
@@ -129,20 +127,7 @@ function showFinalResult() {
         clearCount++;
         localStorage.setItem('clearCount', clearCount);
         setCharacterImage();
-        const heroMessages = [
-            "フリーレン: よくやったわね！",
-            "宿儺: 面白い…次も楽しませろ。",
-            "五条: やるじゃん！俺の弟子にしてやろうか？",
-            "デンケン: 魔法は努力の積み重ねだ。",
-            "ぼっち: あ、あの…すごい…！",
-            "弟: ジャンクフード食べる？お祝いだよ！",
-            "母: 美しい字を書けるように頑張ってね。",
-            "父: よく頑張ったな、少し休め。"
-        ];
-        const shuffledMessages = shuffleArray([...heroMessages]);
-        const selectedMessages = shuffledMessages.slice(0, 3);
-
-        finalResultDiv.innerHTML = `<div class="paripi">🎉 PERFECT!!! YOU ARE AMAZING!!! 🎉<br>${selectedMessages.join('<br>')}</div>`;
+        finalResultDiv.innerHTML = `<div class="paripi">🎉 PERFECT!!! YOU ARE AMAZING!!! 🎉</div>`;
         extraMusic.play().catch(e => console.error('お祝い音楽再生エラー:', e));
     } else {
         finalResultDiv.textContent = `スコア：${score} / ${questions.length}`;
@@ -166,7 +151,7 @@ function speakWord(word, callback) {
         callback();
         return;
     }
-    const voices = window.speechSynthesis.getVoices().filter(v => v.lang === 'en-US' || v.lang === 'en-GB');
+    const voices = window.speechSynthesis.getVoices().filter(v => v.lang.startsWith('en'));
     const voice = voices.find(v => /Google|Samantha|Alex|Karen/.test(v.name)) || voices[0];
     const utterance = new SpeechSynthesisUtterance(word);
     utterance.voice = voice;
@@ -181,7 +166,7 @@ function speakSentence(sentence, callback) {
         callback();
         return;
     }
-    const voices = window.speechSynthesis.getVoices().filter(v => v.lang === 'en-US' || v.lang === 'en-GB');
+    const voices = window.speechSynthesis.getVoices().filter(v => v.lang.startsWith('en'));
     const voice = voices.find(v => /Google|Samantha|Alex|Karen/.test(v.name)) || voices[0];
     const utterance = new SpeechSynthesisUtterance(sentence);
     utterance.voice = voice;
