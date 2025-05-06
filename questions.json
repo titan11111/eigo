@@ -1,102 +1,1602 @@
 [
     {
         "id": 1,
-        "category": "Minecraft",
-        "sentence": "You ( ___ ) carefully through the Nether, avoiding ghasts.",
-        "translation": "君はネザーを慎重に進む、ガストを避けながら。",
-        "answer": "go",
-        "meaning_ja": "行く",
-        "synonyms": ["move", "proceed"],
-        "antonyms": ["stay", "stop"]
+        "category": "Yurucamp",
+        "sentence": "This is example sentence number 1 with ( ___ ).",
+        "translation": "これは例文番号 1 です。",
+        "answer": "folds",
+        "meaning_ja": "折る",
+        "synonyms": [
+            "bends",
+            "creases"
+        ],
+        "antonyms": [
+            "unfolds",
+            "flattens"
+        ]
     },
     {
         "id": 2,
-        "category": "Minecraft",
-        "sentence": "I ( ___ ) enough obsidian to build the portal.",
-        "translation": "私はポータルを作るのに十分な黒曜石を集めた。",
-        "answer": "gather",
-        "meaning_ja": "集める",
-        "synonyms": ["collect", "assemble"],
-        "antonyms": ["scatter", "separate"]
+        "category": "Freiren",
+        "sentence": "This is example sentence number 2 with ( ___ ).",
+        "translation": "これは例文番号 2 です。",
+        "answer": "draws",
+        "meaning_ja": "引く",
+        "synonyms": [
+            "pulls",
+            "picks"
+        ],
+        "antonyms": [
+            "returns",
+            "discards"
+        ]
     },
     {
         "id": 3,
-        "category": "Jujutsu Kaisen",
-        "sentence": "Yuji ( ___ ) the cursed finger even though he knows it's dangerous.",
-        "translation": "悠仁はそれが危険だと分かっていても呪いの指を食べた。",
-        "answer": "eats",
-        "meaning_ja": "食べる",
-        "synonyms": ["consume", "devour"],
-        "antonyms": ["avoid", "reject"]
+        "category": "Card Game",
+        "sentence": "This is example sentence number 3 with ( ___ ).",
+        "translation": "これは例文番号 3 です。",
+        "answer": "wins",
+        "meaning_ja": "勝つ",
+        "synonyms": [
+            "triumphs",
+            "prevails"
+        ],
+        "antonyms": [
+            "loses",
+            "fails"
+        ]
     },
     {
         "id": 4,
-        "category": "Jujutsu Kaisen",
-        "sentence": "Sukuna ( ___ ) through Yuji's body and laughs.",
-        "translation": "宿儺は悠仁の体を支配し、笑った。",
-        "answer": "moves",
-        "meaning_ja": "動く",
-        "synonyms": ["controls", "possesses"],
-        "antonyms": ["freezes", "stops"]
+        "category": "Origami",
+        "sentence": "This is example sentence number 4 with ( ___ ).",
+        "translation": "これは例文番号 4 です。",
+        "answer": "uses",
+        "meaning_ja": "使う",
+        "synonyms": [
+            "casts",
+            "deploys"
+        ],
+        "antonyms": [
+            "ignores",
+            "withholds"
+        ]
     },
     {
         "id": 5,
-        "category": "Freiren",
-        "sentence": "Frieren ( ___ ) calmly when facing Aura, the Guillotine.",
-        "translation": "フリーレンは断頭台のアウラに直面しても冷静だった。",
-        "answer": "stays",
-        "meaning_ja": "とどまる",
-        "synonyms": ["remains", "persists"],
-        "antonyms": ["leaves", "runs"]
+        "category": "Kimetsu",
+        "sentence": "This is example sentence number 5 with ( ___ ).",
+        "translation": "これは例文番号 5 です。",
+        "answer": "plans",
+        "meaning_ja": "計画する",
+        "synonyms": [
+            "prepare",
+            "arrange"
+        ],
+        "antonyms": [
+            "improvises",
+            "guesses"
+        ]
     },
     {
         "id": 6,
-        "category": "Freiren",
-        "sentence": "Denken ( ___ ) something important about magic.",
-        "translation": "デンケンは魔法について重要なことを語った。",
-        "answer": "says",
-        "meaning_ja": "言う",
-        "synonyms": ["states", "speaks"],
-        "antonyms": ["silences", "withholds"]
+        "category": "Bocchi",
+        "sentence": "This is example sentence number 6 with ( ___ ).",
+        "translation": "これは例文番号 6 です。",
+        "answer": "eats",
+        "meaning_ja": "食べる",
+        "synonyms": [
+            "consumes",
+            "devours"
+        ],
+        "antonyms": [
+            "avoids",
+            "skips"
+        ]
     },
     {
         "id": 7,
-        "category": "Star Shinichi",
-        "sentence": "The robot ( ___ ) the command even though it was dangerous.",
-        "translation": "ロボットは危険な命令でも実行した。",
-        "answer": "follows",
-        "meaning_ja": "従う",
-        "synonyms": ["obeys", "executes"],
-        "antonyms": ["disobeys", "ignores"]
+        "category": "Yurucamp",
+        "sentence": "This is example sentence number 7 with ( ___ ).",
+        "translation": "これは例文番号 7 です。",
+        "answer": "sets",
+        "meaning_ja": "立てる",
+        "synonyms": [
+            "puts up",
+            "installs"
+        ],
+        "antonyms": [
+            "removes",
+            "takes down"
+        ]
     },
     {
         "id": 8,
-        "category": "Star Shinichi",
-        "sentence": "The villagers ( ___ ) at once when they heard the voice: 'おーい でてこーい'.",
-        "translation": "村人たちは『おーい でてこーい』の声を聞くとすぐに集まった。",
-        "answer": "gather",
-        "meaning_ja": "集まる",
-        "synonyms": ["assemble", "collect"],
-        "antonyms": ["scatter", "disperse"]
+        "category": "Freiren",
+        "sentence": "This is example sentence number 8 with ( ___ ).",
+        "translation": "これは例文番号 8 です。",
+        "answer": "shouts",
+        "meaning_ja": "叫ぶ",
+        "synonyms": [
+            "yells",
+            "screams"
+        ],
+        "antonyms": [
+            "whispers",
+            "quietens"
+        ]
     },
     {
         "id": 9,
-        "category": "Brother Junk Food",
-        "sentence": "My brother ( ___ ) junk food after school every day.",
-        "translation": "弟は毎日放課後にジャンクフードを食べる。",
-        "answer": "eats",
-        "meaning_ja": "食べる",
-        "synonyms": ["consumes", "munches"],
-        "antonyms": ["avoids", "skips"]
+        "category": "Card Game",
+        "sentence": "This is example sentence number 9 with ( ___ ).",
+        "translation": "これは例文番号 9 です。",
+        "answer": "stands",
+        "meaning_ja": "立つ",
+        "synonyms": [
+            "faces",
+            "confronts"
+        ],
+        "antonyms": [
+            "avoids",
+            "flees"
+        ]
     },
     {
         "id": 10,
-        "category": "Mother Calligraphy",
-        "sentence": "Mother ( ___ ) beautifully when she writes calligraphy.",
-        "translation": "母は書道を書くとき美しく書く。",
-        "answer": "writes",
-        "meaning_ja": "書く",
-        "synonyms": ["scribes", "inscribes"],
-        "antonyms": ["erase", "remove"]
+        "category": "Origami",
+        "sentence": "This is example sentence number 10 with ( ___ ).",
+        "translation": "これは例文番号 10 です。",
+        "answer": "runs",
+        "meaning_ja": "走る",
+        "synonyms": [
+            "sprints",
+            "dashes"
+        ],
+        "antonyms": [
+            "walks",
+            "strolls"
+        ]
+    },
+    {
+        "id": 11,
+        "category": "Kimetsu",
+        "sentence": "This is example sentence number 11 with ( ___ ).",
+        "translation": "これは例文番号 11 です。",
+        "answer": "folds",
+        "meaning_ja": "折る",
+        "synonyms": [
+            "bends",
+            "creases"
+        ],
+        "antonyms": [
+            "unfolds",
+            "flattens"
+        ]
+    },
+    {
+        "id": 12,
+        "category": "Bocchi",
+        "sentence": "This is example sentence number 12 with ( ___ ).",
+        "translation": "これは例文番号 12 です。",
+        "answer": "draws",
+        "meaning_ja": "引く",
+        "synonyms": [
+            "pulls",
+            "picks"
+        ],
+        "antonyms": [
+            "returns",
+            "discards"
+        ]
+    },
+    {
+        "id": 13,
+        "category": "Yurucamp",
+        "sentence": "This is example sentence number 13 with ( ___ ).",
+        "translation": "これは例文番号 13 です。",
+        "answer": "wins",
+        "meaning_ja": "勝つ",
+        "synonyms": [
+            "triumphs",
+            "prevails"
+        ],
+        "antonyms": [
+            "loses",
+            "fails"
+        ]
+    },
+    {
+        "id": 14,
+        "category": "Freiren",
+        "sentence": "This is example sentence number 14 with ( ___ ).",
+        "translation": "これは例文番号 14 です。",
+        "answer": "uses",
+        "meaning_ja": "使う",
+        "synonyms": [
+            "casts",
+            "deploys"
+        ],
+        "antonyms": [
+            "ignores",
+            "withholds"
+        ]
+    },
+    {
+        "id": 15,
+        "category": "Card Game",
+        "sentence": "This is example sentence number 15 with ( ___ ).",
+        "translation": "これは例文番号 15 です。",
+        "answer": "plans",
+        "meaning_ja": "計画する",
+        "synonyms": [
+            "prepare",
+            "arrange"
+        ],
+        "antonyms": [
+            "improvises",
+            "guesses"
+        ]
+    },
+    {
+        "id": 16,
+        "category": "Origami",
+        "sentence": "This is example sentence number 16 with ( ___ ).",
+        "translation": "これは例文番号 16 です。",
+        "answer": "eats",
+        "meaning_ja": "食べる",
+        "synonyms": [
+            "consumes",
+            "devours"
+        ],
+        "antonyms": [
+            "avoids",
+            "skips"
+        ]
+    },
+    {
+        "id": 17,
+        "category": "Kimetsu",
+        "sentence": "This is example sentence number 17 with ( ___ ).",
+        "translation": "これは例文番号 17 です。",
+        "answer": "sets",
+        "meaning_ja": "立てる",
+        "synonyms": [
+            "puts up",
+            "installs"
+        ],
+        "antonyms": [
+            "removes",
+            "takes down"
+        ]
+    },
+    {
+        "id": 18,
+        "category": "Bocchi",
+        "sentence": "This is example sentence number 18 with ( ___ ).",
+        "translation": "これは例文番号 18 です。",
+        "answer": "shouts",
+        "meaning_ja": "叫ぶ",
+        "synonyms": [
+            "yells",
+            "screams"
+        ],
+        "antonyms": [
+            "whispers",
+            "quietens"
+        ]
+    },
+    {
+        "id": 19,
+        "category": "Yurucamp",
+        "sentence": "This is example sentence number 19 with ( ___ ).",
+        "translation": "これは例文番号 19 です。",
+        "answer": "stands",
+        "meaning_ja": "立つ",
+        "synonyms": [
+            "faces",
+            "confronts"
+        ],
+        "antonyms": [
+            "avoids",
+            "flees"
+        ]
+    },
+    {
+        "id": 20,
+        "category": "Freiren",
+        "sentence": "This is example sentence number 20 with ( ___ ).",
+        "translation": "これは例文番号 20 です。",
+        "answer": "runs",
+        "meaning_ja": "走る",
+        "synonyms": [
+            "sprints",
+            "dashes"
+        ],
+        "antonyms": [
+            "walks",
+            "strolls"
+        ]
+    },
+    {
+        "id": 21,
+        "category": "Card Game",
+        "sentence": "This is example sentence number 21 with ( ___ ).",
+        "translation": "これは例文番号 21 です。",
+        "answer": "folds",
+        "meaning_ja": "折る",
+        "synonyms": [
+            "bends",
+            "creases"
+        ],
+        "antonyms": [
+            "unfolds",
+            "flattens"
+        ]
+    },
+    {
+        "id": 22,
+        "category": "Origami",
+        "sentence": "This is example sentence number 22 with ( ___ ).",
+        "translation": "これは例文番号 22 です。",
+        "answer": "draws",
+        "meaning_ja": "引く",
+        "synonyms": [
+            "pulls",
+            "picks"
+        ],
+        "antonyms": [
+            "returns",
+            "discards"
+        ]
+    },
+    {
+        "id": 23,
+        "category": "Kimetsu",
+        "sentence": "This is example sentence number 23 with ( ___ ).",
+        "translation": "これは例文番号 23 です。",
+        "answer": "wins",
+        "meaning_ja": "勝つ",
+        "synonyms": [
+            "triumphs",
+            "prevails"
+        ],
+        "antonyms": [
+            "loses",
+            "fails"
+        ]
+    },
+    {
+        "id": 24,
+        "category": "Bocchi",
+        "sentence": "This is example sentence number 24 with ( ___ ).",
+        "translation": "これは例文番号 24 です。",
+        "answer": "uses",
+        "meaning_ja": "使う",
+        "synonyms": [
+            "casts",
+            "deploys"
+        ],
+        "antonyms": [
+            "ignores",
+            "withholds"
+        ]
+    },
+    {
+        "id": 25,
+        "category": "Yurucamp",
+        "sentence": "This is example sentence number 25 with ( ___ ).",
+        "translation": "これは例文番号 25 です。",
+        "answer": "plans",
+        "meaning_ja": "計画する",
+        "synonyms": [
+            "prepare",
+            "arrange"
+        ],
+        "antonyms": [
+            "improvises",
+            "guesses"
+        ]
+    },
+    {
+        "id": 26,
+        "category": "Freiren",
+        "sentence": "This is example sentence number 26 with ( ___ ).",
+        "translation": "これは例文番号 26 です。",
+        "answer": "eats",
+        "meaning_ja": "食べる",
+        "synonyms": [
+            "consumes",
+            "devours"
+        ],
+        "antonyms": [
+            "avoids",
+            "skips"
+        ]
+    },
+    {
+        "id": 27,
+        "category": "Card Game",
+        "sentence": "This is example sentence number 27 with ( ___ ).",
+        "translation": "これは例文番号 27 です。",
+        "answer": "sets",
+        "meaning_ja": "立てる",
+        "synonyms": [
+            "puts up",
+            "installs"
+        ],
+        "antonyms": [
+            "removes",
+            "takes down"
+        ]
+    },
+    {
+        "id": 28,
+        "category": "Origami",
+        "sentence": "This is example sentence number 28 with ( ___ ).",
+        "translation": "これは例文番号 28 です。",
+        "answer": "shouts",
+        "meaning_ja": "叫ぶ",
+        "synonyms": [
+            "yells",
+            "screams"
+        ],
+        "antonyms": [
+            "whispers",
+            "quietens"
+        ]
+    },
+    {
+        "id": 29,
+        "category": "Kimetsu",
+        "sentence": "This is example sentence number 29 with ( ___ ).",
+        "translation": "これは例文番号 29 です。",
+        "answer": "stands",
+        "meaning_ja": "立つ",
+        "synonyms": [
+            "faces",
+            "confronts"
+        ],
+        "antonyms": [
+            "avoids",
+            "flees"
+        ]
+    },
+    {
+        "id": 30,
+        "category": "Bocchi",
+        "sentence": "This is example sentence number 30 with ( ___ ).",
+        "translation": "これは例文番号 30 です。",
+        "answer": "runs",
+        "meaning_ja": "走る",
+        "synonyms": [
+            "sprints",
+            "dashes"
+        ],
+        "antonyms": [
+            "walks",
+            "strolls"
+        ]
+    },
+    {
+        "id": 31,
+        "category": "Yurucamp",
+        "sentence": "This is example sentence number 31 with ( ___ ).",
+        "translation": "これは例文番号 31 です。",
+        "answer": "folds",
+        "meaning_ja": "折る",
+        "synonyms": [
+            "bends",
+            "creases"
+        ],
+        "antonyms": [
+            "unfolds",
+            "flattens"
+        ]
+    },
+    {
+        "id": 32,
+        "category": "Freiren",
+        "sentence": "This is example sentence number 32 with ( ___ ).",
+        "translation": "これは例文番号 32 です。",
+        "answer": "draws",
+        "meaning_ja": "引く",
+        "synonyms": [
+            "pulls",
+            "picks"
+        ],
+        "antonyms": [
+            "returns",
+            "discards"
+        ]
+    },
+    {
+        "id": 33,
+        "category": "Card Game",
+        "sentence": "This is example sentence number 33 with ( ___ ).",
+        "translation": "これは例文番号 33 です。",
+        "answer": "wins",
+        "meaning_ja": "勝つ",
+        "synonyms": [
+            "triumphs",
+            "prevails"
+        ],
+        "antonyms": [
+            "loses",
+            "fails"
+        ]
+    },
+    {
+        "id": 34,
+        "category": "Origami",
+        "sentence": "This is example sentence number 34 with ( ___ ).",
+        "translation": "これは例文番号 34 です。",
+        "answer": "uses",
+        "meaning_ja": "使う",
+        "synonyms": [
+            "casts",
+            "deploys"
+        ],
+        "antonyms": [
+            "ignores",
+            "withholds"
+        ]
+    },
+    {
+        "id": 35,
+        "category": "Kimetsu",
+        "sentence": "This is example sentence number 35 with ( ___ ).",
+        "translation": "これは例文番号 35 です。",
+        "answer": "plans",
+        "meaning_ja": "計画する",
+        "synonyms": [
+            "prepare",
+            "arrange"
+        ],
+        "antonyms": [
+            "improvises",
+            "guesses"
+        ]
+    },
+    {
+        "id": 36,
+        "category": "Bocchi",
+        "sentence": "This is example sentence number 36 with ( ___ ).",
+        "translation": "これは例文番号 36 です。",
+        "answer": "eats",
+        "meaning_ja": "食べる",
+        "synonyms": [
+            "consumes",
+            "devours"
+        ],
+        "antonyms": [
+            "avoids",
+            "skips"
+        ]
+    },
+    {
+        "id": 37,
+        "category": "Yurucamp",
+        "sentence": "This is example sentence number 37 with ( ___ ).",
+        "translation": "これは例文番号 37 です。",
+        "answer": "sets",
+        "meaning_ja": "立てる",
+        "synonyms": [
+            "puts up",
+            "installs"
+        ],
+        "antonyms": [
+            "removes",
+            "takes down"
+        ]
+    },
+    {
+        "id": 38,
+        "category": "Freiren",
+        "sentence": "This is example sentence number 38 with ( ___ ).",
+        "translation": "これは例文番号 38 です。",
+        "answer": "shouts",
+        "meaning_ja": "叫ぶ",
+        "synonyms": [
+            "yells",
+            "screams"
+        ],
+        "antonyms": [
+            "whispers",
+            "quietens"
+        ]
+    },
+    {
+        "id": 39,
+        "category": "Card Game",
+        "sentence": "This is example sentence number 39 with ( ___ ).",
+        "translation": "これは例文番号 39 です。",
+        "answer": "stands",
+        "meaning_ja": "立つ",
+        "synonyms": [
+            "faces",
+            "confronts"
+        ],
+        "antonyms": [
+            "avoids",
+            "flees"
+        ]
+    },
+    {
+        "id": 40,
+        "category": "Origami",
+        "sentence": "This is example sentence number 40 with ( ___ ).",
+        "translation": "これは例文番号 40 です。",
+        "answer": "runs",
+        "meaning_ja": "走る",
+        "synonyms": [
+            "sprints",
+            "dashes"
+        ],
+        "antonyms": [
+            "walks",
+            "strolls"
+        ]
+    },
+    {
+        "id": 41,
+        "category": "Kimetsu",
+        "sentence": "This is example sentence number 41 with ( ___ ).",
+        "translation": "これは例文番号 41 です。",
+        "answer": "folds",
+        "meaning_ja": "折る",
+        "synonyms": [
+            "bends",
+            "creases"
+        ],
+        "antonyms": [
+            "unfolds",
+            "flattens"
+        ]
+    },
+    {
+        "id": 42,
+        "category": "Bocchi",
+        "sentence": "This is example sentence number 42 with ( ___ ).",
+        "translation": "これは例文番号 42 です。",
+        "answer": "draws",
+        "meaning_ja": "引く",
+        "synonyms": [
+            "pulls",
+            "picks"
+        ],
+        "antonyms": [
+            "returns",
+            "discards"
+        ]
+    },
+    {
+        "id": 43,
+        "category": "Yurucamp",
+        "sentence": "This is example sentence number 43 with ( ___ ).",
+        "translation": "これは例文番号 43 です。",
+        "answer": "wins",
+        "meaning_ja": "勝つ",
+        "synonyms": [
+            "triumphs",
+            "prevails"
+        ],
+        "antonyms": [
+            "loses",
+            "fails"
+        ]
+    },
+    {
+        "id": 44,
+        "category": "Freiren",
+        "sentence": "This is example sentence number 44 with ( ___ ).",
+        "translation": "これは例文番号 44 です。",
+        "answer": "uses",
+        "meaning_ja": "使う",
+        "synonyms": [
+            "casts",
+            "deploys"
+        ],
+        "antonyms": [
+            "ignores",
+            "withholds"
+        ]
+    },
+    {
+        "id": 45,
+        "category": "Card Game",
+        "sentence": "This is example sentence number 45 with ( ___ ).",
+        "translation": "これは例文番号 45 です。",
+        "answer": "plans",
+        "meaning_ja": "計画する",
+        "synonyms": [
+            "prepare",
+            "arrange"
+        ],
+        "antonyms": [
+            "improvises",
+            "guesses"
+        ]
+    },
+    {
+        "id": 46,
+        "category": "Origami",
+        "sentence": "This is example sentence number 46 with ( ___ ).",
+        "translation": "これは例文番号 46 です。",
+        "answer": "eats",
+        "meaning_ja": "食べる",
+        "synonyms": [
+            "consumes",
+            "devours"
+        ],
+        "antonyms": [
+            "avoids",
+            "skips"
+        ]
+    },
+    {
+        "id": 47,
+        "category": "Kimetsu",
+        "sentence": "This is example sentence number 47 with ( ___ ).",
+        "translation": "これは例文番号 47 です。",
+        "answer": "sets",
+        "meaning_ja": "立てる",
+        "synonyms": [
+            "puts up",
+            "installs"
+        ],
+        "antonyms": [
+            "removes",
+            "takes down"
+        ]
+    },
+    {
+        "id": 48,
+        "category": "Bocchi",
+        "sentence": "This is example sentence number 48 with ( ___ ).",
+        "translation": "これは例文番号 48 です。",
+        "answer": "shouts",
+        "meaning_ja": "叫ぶ",
+        "synonyms": [
+            "yells",
+            "screams"
+        ],
+        "antonyms": [
+            "whispers",
+            "quietens"
+        ]
+    },
+    {
+        "id": 49,
+        "category": "Yurucamp",
+        "sentence": "This is example sentence number 49 with ( ___ ).",
+        "translation": "これは例文番号 49 です。",
+        "answer": "stands",
+        "meaning_ja": "立つ",
+        "synonyms": [
+            "faces",
+            "confronts"
+        ],
+        "antonyms": [
+            "avoids",
+            "flees"
+        ]
+    },
+    {
+        "id": 50,
+        "category": "Freiren",
+        "sentence": "This is example sentence number 50 with ( ___ ).",
+        "translation": "これは例文番号 50 です。",
+        "answer": "runs",
+        "meaning_ja": "走る",
+        "synonyms": [
+            "sprints",
+            "dashes"
+        ],
+        "antonyms": [
+            "walks",
+            "strolls"
+        ]
+    },
+    {
+        "id": 51,
+        "category": "Card Game",
+        "sentence": "This is example sentence number 51 with ( ___ ).",
+        "translation": "これは例文番号 51 です。",
+        "answer": "folds",
+        "meaning_ja": "折る",
+        "synonyms": [
+            "bends",
+            "creases"
+        ],
+        "antonyms": [
+            "unfolds",
+            "flattens"
+        ]
+    },
+    {
+        "id": 52,
+        "category": "Origami",
+        "sentence": "This is example sentence number 52 with ( ___ ).",
+        "translation": "これは例文番号 52 です。",
+        "answer": "draws",
+        "meaning_ja": "引く",
+        "synonyms": [
+            "pulls",
+            "picks"
+        ],
+        "antonyms": [
+            "returns",
+            "discards"
+        ]
+    },
+    {
+        "id": 53,
+        "category": "Kimetsu",
+        "sentence": "This is example sentence number 53 with ( ___ ).",
+        "translation": "これは例文番号 53 です。",
+        "answer": "wins",
+        "meaning_ja": "勝つ",
+        "synonyms": [
+            "triumphs",
+            "prevails"
+        ],
+        "antonyms": [
+            "loses",
+            "fails"
+        ]
+    },
+    {
+        "id": 54,
+        "category": "Bocchi",
+        "sentence": "This is example sentence number 54 with ( ___ ).",
+        "translation": "これは例文番号 54 です。",
+        "answer": "uses",
+        "meaning_ja": "使う",
+        "synonyms": [
+            "casts",
+            "deploys"
+        ],
+        "antonyms": [
+            "ignores",
+            "withholds"
+        ]
+    },
+    {
+        "id": 55,
+        "category": "Yurucamp",
+        "sentence": "This is example sentence number 55 with ( ___ ).",
+        "translation": "これは例文番号 55 です。",
+        "answer": "plans",
+        "meaning_ja": "計画する",
+        "synonyms": [
+            "prepare",
+            "arrange"
+        ],
+        "antonyms": [
+            "improvises",
+            "guesses"
+        ]
+    },
+    {
+        "id": 56,
+        "category": "Freiren",
+        "sentence": "This is example sentence number 56 with ( ___ ).",
+        "translation": "これは例文番号 56 です。",
+        "answer": "eats",
+        "meaning_ja": "食べる",
+        "synonyms": [
+            "consumes",
+            "devours"
+        ],
+        "antonyms": [
+            "avoids",
+            "skips"
+        ]
+    },
+    {
+        "id": 57,
+        "category": "Card Game",
+        "sentence": "This is example sentence number 57 with ( ___ ).",
+        "translation": "これは例文番号 57 です。",
+        "answer": "sets",
+        "meaning_ja": "立てる",
+        "synonyms": [
+            "puts up",
+            "installs"
+        ],
+        "antonyms": [
+            "removes",
+            "takes down"
+        ]
+    },
+    {
+        "id": 58,
+        "category": "Origami",
+        "sentence": "This is example sentence number 58 with ( ___ ).",
+        "translation": "これは例文番号 58 です。",
+        "answer": "shouts",
+        "meaning_ja": "叫ぶ",
+        "synonyms": [
+            "yells",
+            "screams"
+        ],
+        "antonyms": [
+            "whispers",
+            "quietens"
+        ]
+    },
+    {
+        "id": 59,
+        "category": "Kimetsu",
+        "sentence": "This is example sentence number 59 with ( ___ ).",
+        "translation": "これは例文番号 59 です。",
+        "answer": "stands",
+        "meaning_ja": "立つ",
+        "synonyms": [
+            "faces",
+            "confronts"
+        ],
+        "antonyms": [
+            "avoids",
+            "flees"
+        ]
+    },
+    {
+        "id": 60,
+        "category": "Bocchi",
+        "sentence": "This is example sentence number 60 with ( ___ ).",
+        "translation": "これは例文番号 60 です。",
+        "answer": "runs",
+        "meaning_ja": "走る",
+        "synonyms": [
+            "sprints",
+            "dashes"
+        ],
+        "antonyms": [
+            "walks",
+            "strolls"
+        ]
+    },
+    {
+        "id": 61,
+        "category": "Yurucamp",
+        "sentence": "This is example sentence number 61 with ( ___ ).",
+        "translation": "これは例文番号 61 です。",
+        "answer": "folds",
+        "meaning_ja": "折る",
+        "synonyms": [
+            "bends",
+            "creases"
+        ],
+        "antonyms": [
+            "unfolds",
+            "flattens"
+        ]
+    },
+    {
+        "id": 62,
+        "category": "Freiren",
+        "sentence": "This is example sentence number 62 with ( ___ ).",
+        "translation": "これは例文番号 62 です。",
+        "answer": "draws",
+        "meaning_ja": "引く",
+        "synonyms": [
+            "pulls",
+            "picks"
+        ],
+        "antonyms": [
+            "returns",
+            "discards"
+        ]
+    },
+    {
+        "id": 63,
+        "category": "Card Game",
+        "sentence": "This is example sentence number 63 with ( ___ ).",
+        "translation": "これは例文番号 63 です。",
+        "answer": "wins",
+        "meaning_ja": "勝つ",
+        "synonyms": [
+            "triumphs",
+            "prevails"
+        ],
+        "antonyms": [
+            "loses",
+            "fails"
+        ]
+    },
+    {
+        "id": 64,
+        "category": "Origami",
+        "sentence": "This is example sentence number 64 with ( ___ ).",
+        "translation": "これは例文番号 64 です。",
+        "answer": "uses",
+        "meaning_ja": "使う",
+        "synonyms": [
+            "casts",
+            "deploys"
+        ],
+        "antonyms": [
+            "ignores",
+            "withholds"
+        ]
+    },
+    {
+        "id": 65,
+        "category": "Kimetsu",
+        "sentence": "This is example sentence number 65 with ( ___ ).",
+        "translation": "これは例文番号 65 です。",
+        "answer": "plans",
+        "meaning_ja": "計画する",
+        "synonyms": [
+            "prepare",
+            "arrange"
+        ],
+        "antonyms": [
+            "improvises",
+            "guesses"
+        ]
+    },
+    {
+        "id": 66,
+        "category": "Bocchi",
+        "sentence": "This is example sentence number 66 with ( ___ ).",
+        "translation": "これは例文番号 66 です。",
+        "answer": "eats",
+        "meaning_ja": "食べる",
+        "synonyms": [
+            "consumes",
+            "devours"
+        ],
+        "antonyms": [
+            "avoids",
+            "skips"
+        ]
+    },
+    {
+        "id": 67,
+        "category": "Yurucamp",
+        "sentence": "This is example sentence number 67 with ( ___ ).",
+        "translation": "これは例文番号 67 です。",
+        "answer": "sets",
+        "meaning_ja": "立てる",
+        "synonyms": [
+            "puts up",
+            "installs"
+        ],
+        "antonyms": [
+            "removes",
+            "takes down"
+        ]
+    },
+    {
+        "id": 68,
+        "category": "Freiren",
+        "sentence": "This is example sentence number 68 with ( ___ ).",
+        "translation": "これは例文番号 68 です。",
+        "answer": "shouts",
+        "meaning_ja": "叫ぶ",
+        "synonyms": [
+            "yells",
+            "screams"
+        ],
+        "antonyms": [
+            "whispers",
+            "quietens"
+        ]
+    },
+    {
+        "id": 69,
+        "category": "Card Game",
+        "sentence": "This is example sentence number 69 with ( ___ ).",
+        "translation": "これは例文番号 69 です。",
+        "answer": "stands",
+        "meaning_ja": "立つ",
+        "synonyms": [
+            "faces",
+            "confronts"
+        ],
+        "antonyms": [
+            "avoids",
+            "flees"
+        ]
+    },
+    {
+        "id": 70,
+        "category": "Origami",
+        "sentence": "This is example sentence number 70 with ( ___ ).",
+        "translation": "これは例文番号 70 です。",
+        "answer": "runs",
+        "meaning_ja": "走る",
+        "synonyms": [
+            "sprints",
+            "dashes"
+        ],
+        "antonyms": [
+            "walks",
+            "strolls"
+        ]
+    },
+    {
+        "id": 71,
+        "category": "Kimetsu",
+        "sentence": "This is example sentence number 71 with ( ___ ).",
+        "translation": "これは例文番号 71 です。",
+        "answer": "folds",
+        "meaning_ja": "折る",
+        "synonyms": [
+            "bends",
+            "creases"
+        ],
+        "antonyms": [
+            "unfolds",
+            "flattens"
+        ]
+    },
+    {
+        "id": 72,
+        "category": "Bocchi",
+        "sentence": "This is example sentence number 72 with ( ___ ).",
+        "translation": "これは例文番号 72 です。",
+        "answer": "draws",
+        "meaning_ja": "引く",
+        "synonyms": [
+            "pulls",
+            "picks"
+        ],
+        "antonyms": [
+            "returns",
+            "discards"
+        ]
+    },
+    {
+        "id": 73,
+        "category": "Yurucamp",
+        "sentence": "This is example sentence number 73 with ( ___ ).",
+        "translation": "これは例文番号 73 です。",
+        "answer": "wins",
+        "meaning_ja": "勝つ",
+        "synonyms": [
+            "triumphs",
+            "prevails"
+        ],
+        "antonyms": [
+            "loses",
+            "fails"
+        ]
+    },
+    {
+        "id": 74,
+        "category": "Freiren",
+        "sentence": "This is example sentence number 74 with ( ___ ).",
+        "translation": "これは例文番号 74 です。",
+        "answer": "uses",
+        "meaning_ja": "使う",
+        "synonyms": [
+            "casts",
+            "deploys"
+        ],
+        "antonyms": [
+            "ignores",
+            "withholds"
+        ]
+    },
+    {
+        "id": 75,
+        "category": "Card Game",
+        "sentence": "This is example sentence number 75 with ( ___ ).",
+        "translation": "これは例文番号 75 です。",
+        "answer": "plans",
+        "meaning_ja": "計画する",
+        "synonyms": [
+            "prepare",
+            "arrange"
+        ],
+        "antonyms": [
+            "improvises",
+            "guesses"
+        ]
+    },
+    {
+        "id": 76,
+        "category": "Origami",
+        "sentence": "This is example sentence number 76 with ( ___ ).",
+        "translation": "これは例文番号 76 です。",
+        "answer": "eats",
+        "meaning_ja": "食べる",
+        "synonyms": [
+            "consumes",
+            "devours"
+        ],
+        "antonyms": [
+            "avoids",
+            "skips"
+        ]
+    },
+    {
+        "id": 77,
+        "category": "Kimetsu",
+        "sentence": "This is example sentence number 77 with ( ___ ).",
+        "translation": "これは例文番号 77 です。",
+        "answer": "sets",
+        "meaning_ja": "立てる",
+        "synonyms": [
+            "puts up",
+            "installs"
+        ],
+        "antonyms": [
+            "removes",
+            "takes down"
+        ]
+    },
+    {
+        "id": 78,
+        "category": "Bocchi",
+        "sentence": "This is example sentence number 78 with ( ___ ).",
+        "translation": "これは例文番号 78 です。",
+        "answer": "shouts",
+        "meaning_ja": "叫ぶ",
+        "synonyms": [
+            "yells",
+            "screams"
+        ],
+        "antonyms": [
+            "whispers",
+            "quietens"
+        ]
+    },
+    {
+        "id": 79,
+        "category": "Yurucamp",
+        "sentence": "This is example sentence number 79 with ( ___ ).",
+        "translation": "これは例文番号 79 です。",
+        "answer": "stands",
+        "meaning_ja": "立つ",
+        "synonyms": [
+            "faces",
+            "confronts"
+        ],
+        "antonyms": [
+            "avoids",
+            "flees"
+        ]
+    },
+    {
+        "id": 80,
+        "category": "Freiren",
+        "sentence": "This is example sentence number 80 with ( ___ ).",
+        "translation": "これは例文番号 80 です。",
+        "answer": "runs",
+        "meaning_ja": "走る",
+        "synonyms": [
+            "sprints",
+            "dashes"
+        ],
+        "antonyms": [
+            "walks",
+            "strolls"
+        ]
+    },
+    {
+        "id": 81,
+        "category": "Card Game",
+        "sentence": "This is example sentence number 81 with ( ___ ).",
+        "translation": "これは例文番号 81 です。",
+        "answer": "folds",
+        "meaning_ja": "折る",
+        "synonyms": [
+            "bends",
+            "creases"
+        ],
+        "antonyms": [
+            "unfolds",
+            "flattens"
+        ]
+    },
+    {
+        "id": 82,
+        "category": "Origami",
+        "sentence": "This is example sentence number 82 with ( ___ ).",
+        "translation": "これは例文番号 82 です。",
+        "answer": "draws",
+        "meaning_ja": "引く",
+        "synonyms": [
+            "pulls",
+            "picks"
+        ],
+        "antonyms": [
+            "returns",
+            "discards"
+        ]
+    },
+    {
+        "id": 83,
+        "category": "Kimetsu",
+        "sentence": "This is example sentence number 83 with ( ___ ).",
+        "translation": "これは例文番号 83 です。",
+        "answer": "wins",
+        "meaning_ja": "勝つ",
+        "synonyms": [
+            "triumphs",
+            "prevails"
+        ],
+        "antonyms": [
+            "loses",
+            "fails"
+        ]
+    },
+    {
+        "id": 84,
+        "category": "Bocchi",
+        "sentence": "This is example sentence number 84 with ( ___ ).",
+        "translation": "これは例文番号 84 です。",
+        "answer": "uses",
+        "meaning_ja": "使う",
+        "synonyms": [
+            "casts",
+            "deploys"
+        ],
+        "antonyms": [
+            "ignores",
+            "withholds"
+        ]
+    },
+    {
+        "id": 85,
+        "category": "Yurucamp",
+        "sentence": "This is example sentence number 85 with ( ___ ).",
+        "translation": "これは例文番号 85 です。",
+        "answer": "plans",
+        "meaning_ja": "計画する",
+        "synonyms": [
+            "prepare",
+            "arrange"
+        ],
+        "antonyms": [
+            "improvises",
+            "guesses"
+        ]
+    },
+    {
+        "id": 86,
+        "category": "Freiren",
+        "sentence": "This is example sentence number 86 with ( ___ ).",
+        "translation": "これは例文番号 86 です。",
+        "answer": "eats",
+        "meaning_ja": "食べる",
+        "synonyms": [
+            "consumes",
+            "devours"
+        ],
+        "antonyms": [
+            "avoids",
+            "skips"
+        ]
+    },
+    {
+        "id": 87,
+        "category": "Card Game",
+        "sentence": "This is example sentence number 87 with ( ___ ).",
+        "translation": "これは例文番号 87 です。",
+        "answer": "sets",
+        "meaning_ja": "立てる",
+        "synonyms": [
+            "puts up",
+            "installs"
+        ],
+        "antonyms": [
+            "removes",
+            "takes down"
+        ]
+    },
+    {
+        "id": 88,
+        "category": "Origami",
+        "sentence": "This is example sentence number 88 with ( ___ ).",
+        "translation": "これは例文番号 88 です。",
+        "answer": "shouts",
+        "meaning_ja": "叫ぶ",
+        "synonyms": [
+            "yells",
+            "screams"
+        ],
+        "antonyms": [
+            "whispers",
+            "quietens"
+        ]
+    },
+    {
+        "id": 89,
+        "category": "Kimetsu",
+        "sentence": "This is example sentence number 89 with ( ___ ).",
+        "translation": "これは例文番号 89 です。",
+        "answer": "stands",
+        "meaning_ja": "立つ",
+        "synonyms": [
+            "faces",
+            "confronts"
+        ],
+        "antonyms": [
+            "avoids",
+            "flees"
+        ]
+    },
+    {
+        "id": 90,
+        "category": "Bocchi",
+        "sentence": "This is example sentence number 90 with ( ___ ).",
+        "translation": "これは例文番号 90 です。",
+        "answer": "runs",
+        "meaning_ja": "走る",
+        "synonyms": [
+            "sprints",
+            "dashes"
+        ],
+        "antonyms": [
+            "walks",
+            "strolls"
+        ]
+    },
+    {
+        "id": 91,
+        "category": "Yurucamp",
+        "sentence": "This is example sentence number 91 with ( ___ ).",
+        "translation": "これは例文番号 91 です。",
+        "answer": "folds",
+        "meaning_ja": "折る",
+        "synonyms": [
+            "bends",
+            "creases"
+        ],
+        "antonyms": [
+            "unfolds",
+            "flattens"
+        ]
+    },
+    {
+        "id": 92,
+        "category": "Freiren",
+        "sentence": "This is example sentence number 92 with ( ___ ).",
+        "translation": "これは例文番号 92 です。",
+        "answer": "draws",
+        "meaning_ja": "引く",
+        "synonyms": [
+            "pulls",
+            "picks"
+        ],
+        "antonyms": [
+            "returns",
+            "discards"
+        ]
+    },
+    {
+        "id": 93,
+        "category": "Card Game",
+        "sentence": "This is example sentence number 93 with ( ___ ).",
+        "translation": "これは例文番号 93 です。",
+        "answer": "wins",
+        "meaning_ja": "勝つ",
+        "synonyms": [
+            "triumphs",
+            "prevails"
+        ],
+        "antonyms": [
+            "loses",
+            "fails"
+        ]
+    },
+    {
+        "id": 94,
+        "category": "Origami",
+        "sentence": "This is example sentence number 94 with ( ___ ).",
+        "translation": "これは例文番号 94 です。",
+        "answer": "uses",
+        "meaning_ja": "使う",
+        "synonyms": [
+            "casts",
+            "deploys"
+        ],
+        "antonyms": [
+            "ignores",
+            "withholds"
+        ]
+    },
+    {
+        "id": 95,
+        "category": "Kimetsu",
+        "sentence": "This is example sentence number 95 with ( ___ ).",
+        "translation": "これは例文番号 95 です。",
+        "answer": "plans",
+        "meaning_ja": "計画する",
+        "synonyms": [
+            "prepare",
+            "arrange"
+        ],
+        "antonyms": [
+            "improvises",
+            "guesses"
+        ]
+    },
+    {
+        "id": 96,
+        "category": "Bocchi",
+        "sentence": "This is example sentence number 96 with ( ___ ).",
+        "translation": "これは例文番号 96 です。",
+        "answer": "eats",
+        "meaning_ja": "食べる",
+        "synonyms": [
+            "consumes",
+            "devours"
+        ],
+        "antonyms": [
+            "avoids",
+            "skips"
+        ]
+    },
+    {
+        "id": 97,
+        "category": "Yurucamp",
+        "sentence": "This is example sentence number 97 with ( ___ ).",
+        "translation": "これは例文番号 97 です。",
+        "answer": "sets",
+        "meaning_ja": "立てる",
+        "synonyms": [
+            "puts up",
+            "installs"
+        ],
+        "antonyms": [
+            "removes",
+            "takes down"
+        ]
+    },
+    {
+        "id": 98,
+        "category": "Freiren",
+        "sentence": "This is example sentence number 98 with ( ___ ).",
+        "translation": "これは例文番号 98 です。",
+        "answer": "shouts",
+        "meaning_ja": "叫ぶ",
+        "synonyms": [
+            "yells",
+            "screams"
+        ],
+        "antonyms": [
+            "whispers",
+            "quietens"
+        ]
+    },
+    {
+        "id": 99,
+        "category": "Card Game",
+        "sentence": "This is example sentence number 99 with ( ___ ).",
+        "translation": "これは例文番号 99 です。",
+        "answer": "stands",
+        "meaning_ja": "立つ",
+        "synonyms": [
+            "faces",
+            "confronts"
+        ],
+        "antonyms": [
+            "avoids",
+            "flees"
+        ]
+    },
+    {
+        "id": 100,
+        "category": "Origami",
+        "sentence": "This is example sentence number 100 with ( ___ ).",
+        "translation": "これは例文番号 100 です。",
+        "answer": "runs",
+        "meaning_ja": "走る",
+        "synonyms": [
+            "sprints",
+            "dashes"
+        ],
+        "antonyms": [
+            "walks",
+            "strolls"
+        ]
     }
 ]
