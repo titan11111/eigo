@@ -3,31 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>興味別 英語穴埋めクイズ</title>
+    <title>中3英単語クイズ</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container" id="container">
-        <h1>興味別 英語穴埋めクイズ</h1>
-        <div id="quiz-area">
-            <div id="question-number">Q1</div>
-            <div id="question-text">ここに英文が出ます</div>
-            <div id="translation-text">ここに和訳が出ます</div>
-            <div id="choices" class="buttons"></div>
-            <div id="result"></div>
-            <div id="info"></div>
-            <div id="final-result"></div>
-            <img id="character-img" src="" alt="キャラクター画像" width="150" style="display:none; margin-top:20px;">
-            <button id="retry-btn" class="btn">再挑戦する</button>
-            <button id="play-bgm" class="btn">BGM再生</button>
+    <div class="container">
+        <h1>中3英単語クイズ</h1>
+        <div id="quiz">
+            <p id="jp-translation" class="jp"></p>
+            <p id="question" class="en"></p>
+            <div id="choices"></div>
+            <p id="meaning"></p>
+            <p id="synonym"></p>
+            <p id="antonym"></p>
+            <p id="result"></p>
         </div>
+        <button id="restart-btn" style="display:none;">再挑戦する</button>
     </div>
-
-    <audio id="bgm" src="sound/Recharging.mp3" loop></audio>
-    <audio id="seikai-sound" src="sound/seikai.mp3"></audio>
-    <audio id="fuseikai-sound" src="sound/fuseikai.mp3"></audio>
-    <audio id="extra-music" src="sound/extra.mp3"></audio>
-
+    <audio id="bgm" src="sound/bgm.mp3" loop></audio>
     <script src="script.js"></script>
 </body>
 </html>
