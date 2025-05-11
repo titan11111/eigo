@@ -26,17 +26,28 @@ h1 {
     margin: 8px 0;
 }
 
+#choices {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4%;
+    justify-content: center;
+    margin-top: 10px;
+}
+
 #choices button {
-    width: 100%;
-    margin: 5px 0;
-    padding: 10px;
-    font-size: 0.95em;
+    width: 48%;
+    margin-top: 5px;
+    padding: 12px;
+    font-size: 1em;
     cursor: pointer;
+    box-sizing: border-box;
 }
 
 #result, #meaning, #synonym, #antonym {
     margin-top: 10px;
-    font-size: 0.9em;
+    font-size: 0.95em;
+    line-height: 1.5em;
+    white-space: pre-line;
 }
 
 #restart-btn {
@@ -51,6 +62,6 @@ h1 {
         font-size: 1.2em;
     }
     #choices button {
-        font-size: 0.85em;
+        font-size: 0.9em;
     }
 }
