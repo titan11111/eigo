@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>中3英単語クイズ</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>英単語クイズ</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="container">
-        <h1>中3英単語クイズ</h1>
-        <div id="quiz">
-            <p id="jp-translation" class="jp"></p>
-            <p id="question" class="en"></p>
-            <div id="choices"></div>
-            <p id="meaning"></p>
-            <p id="synonym"></p>
-            <p id="antonym"></p>
-            <p id="result"></p>
-        </div>
-        <button id="restart-btn" style="display:none;">再挑戦する</button>
-    </div>
-    <audio id="bgm" src="sound/bgm.mp3" loop></audio>
-    <script src="script.js"></script>
+  <div class="container">
+    <h1>英単語クイズ</h1>
+    <div id="question" class="question"></div>
+    <div id="choices" class="choices"></div>
+    <div id="result" class="result"></div>
+    <button id="restart-btn" style="display:none;">再挑戦する</button>
+  </div>
+
+  <!-- 効果音とBGM -->
+  <audio id="seikai-sound" src="sound/seikai.mp3"></audio>
+  <audio id="fuseikai-sound" src="sound/fuseikai.mp3"></audio>
+  <audio id="bgm" src="sound/bgm.mp3" loop></audio>
+
+  <!-- クイズデータとスクリプト -->
+  <script src="quizData.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
