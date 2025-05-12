@@ -2,6 +2,7 @@ const questionEl = document.getElementById('question');
 const choicesEl = document.getElementById('choices');
 const resultEl = document.getElementById('result');
 const restartBtn = document.getElementById('restart-btn');
+const nextBtn = document.getElementById('next-btn');
 
 const QUESTIONS_PER_GAME = 10;
 let currentQuestion = 0;
@@ -32,6 +33,9 @@ function showQuestion() {
 
   const shuffledChoices = shuffleArray([...current.choices]);
   choicesEl.innerHTML = '';
+  resultEl.innerHTML = '';
+  nextBtn.style.display = 'none';
+
   shuffledChoices.forEach(choice => {
     const btn = document.createElement('button');
     btn.className = 'choice-btn';
@@ -44,46 +48,58 @@ function showQuestion() {
 function selectAnswer(selected) {
   const current = gameQuestions[currentQuestion];
   const correct = current.answer;
+
+  // 空欄置換（半角カッコ限定）
   const sentenceWithWord = current.sentence.replace("(   )", correct);
+
+  // ボタン無効化
+  document.querySelectorAll('.choice-btn').forEach(btn => btn.disabled = true);
 
   if (selected === correct) {
     score++;
     correctStreak++;
     resultEl.innerHTML = `
-      ✅ <strong>正解！</strong><br>
-      <strong>単語：</strong> ${correct}<br>
-      <strong>意味：</strong> ${current.meaning}<br>
-      <strong>類義語：</strong> ${current.synonym}<br>
-      <strong>反対語：</strong> ${current.antonym}
+      <div class="explain-block correct">
+        <div class="title">✅ <strong>正解！</strong></div>
+        <div class="line"><strong>● 単語：</strong> ${correct}</div>
+        <div class="line"><strong>● 意味：</strong> ${current.meaning}</div>
+        <div class="line"><strong>● 類義語：</strong> ${current.synonym}</div>
+        <div class="line"><strong>● 反対語：</strong> ${current.antonym}</div>
+      </div>
     `;
     document.getElementById("seikai-sound").play();
   } else {
     correctStreak = 0;
     resultEl.innerHTML = `
-      ❌ <strong>不正解…</strong><br>
-      <strong>正解：</strong> ${correct}<br>
-      <strong>意味：</strong> ${current.meaning}<br>
-      <strong>類義語：</strong> ${current.synonym}<br>
-      <strong>反対語：</strong> ${current.antonym}
+      <div class="explain-block incorrect">
+        <div class="title">❌ <strong>不正解…</strong></div>
+        <div class="line"><strong>● 正解：</strong> ${correct}</div>
+        <div class="line"><strong>● 意味：</strong> ${current.meaning}</div>
+        <div class="line"><strong>● 類義語：</strong> ${current.synonym}</div>
+        <div class="line"><strong>● 反対語：</strong> ${current.antonym}</div>
+      </div>
     `;
     document.getElementById("fuseikai-sound").play();
   }
 
+  // 読み上げ
   speak(correct);
   setTimeout(() => {
     speak(sentenceWithWord);
   }, 1000);
 
-  setTimeout(() => {
-    currentQuestion++;
-    if (currentQuestion >= QUESTIONS_PER_GAME) {
-      showResult();
-    } else {
-      showQuestion();
-      resultEl.innerHTML = '';
-    }
-  }, 3000);
+  nextBtn.style.display = 'block';
 }
+
+nextBtn.onclick = () => {
+  window.speechSynthesis.cancel();
+  currentQuestion++;
+  if (currentQuestion >= QUESTIONS_PER_GAME) {
+    showResult();
+  } else {
+    showQuestion();
+  }
+};
 
 function showResult() {
   const ratio = score / QUESTIONS_PER_GAME;
@@ -131,6 +147,7 @@ function showResult() {
   choicesEl.innerHTML = '';
   resultEl.innerHTML = '';
   restartBtn.style.display = 'block';
+  nextBtn.style.display = 'none';
   document.getElementById("bgm").pause();
 }
 
@@ -146,6 +163,7 @@ function restartGame() {
   showQuestion();
   resultEl.innerHTML = '';
   restartBtn.style.display = 'none';
+  nextBtn.style.display = 'none';
   document.getElementById("bgm").play();
 }
 
