@@ -11,7 +11,10 @@
     <h1>英単語クイズ</h1>
     <div id="question" class="question"></div>
     <div id="choices" class="choices"></div>
-    <div id="result" class="result"></div>
+    <div id="result" class="result">
+      <!-- 最初から白枠を表示しておくため空で置いておく -->
+    </div>
+    <button id="next-btn" style="display:none;">次へ</button>
     <button id="restart-btn" style="display:none;">再挑戦する</button>
   </div>
 
@@ -20,7 +23,7 @@
   <audio id="fuseikai-sound" src="sound/fuseikai.mp3"></audio>
   <audio id="bgm" src="sound/bgm.mp3" loop></audio>
 
-  <!-- クイズデータとスクリプト -->
+  <!-- クイズデータとスクリプト（順番に注意！） -->
   <script src="quizData.js"></script>
   <script src="script.js"></script>
 </body>
