@@ -9,21 +9,31 @@ let currentQuestion = 0;
 let score = 0;
 let correctStreak = 0;
 let gameQuestions = [];
+let allQuizData = [];
 
-function shuffleArray(array) {
-  return array.sort(() => Math.random() - 0.5);
-}
-
+// 音声読み上げ関数（改良版）
 function speak(text) {
   const utterance = new SpeechSynthesisUtterance(text);
   utterance.lang = 'en-US';
   utterance.volume = 1.0;
   utterance.rate = 0.9;
   utterance.pitch = 1.0;
+
+  const voices = window.speechSynthesis.getVoices();
+  voices.forEach(voice => {
+    if (voice.lang.includes('en-') && !utterance.voice) {
+      utterance.voice = voice;
+    }
+    if (voice.lang === 'en-US') {
+      utterance.voice = voice;
+    }
+  });
+
   window.speechSynthesis.cancel();
   window.speechSynthesis.speak(utterance);
 }
 
+// クイズ出題
 function showQuestion() {
   const current = gameQuestions[currentQuestion];
   questionEl.innerHTML = `
@@ -31,7 +41,7 @@ function showQuestion() {
     <p>${current.sentence}</p>
   `;
 
-  const shuffledChoices = shuffleArray([...current.choices]);
+  const shuffledChoices = [...current.choices].sort(() => Math.random() - 0.5);
   choicesEl.innerHTML = '';
   resultEl.innerHTML = '';
   nextBtn.style.display = 'none';
@@ -45,14 +55,12 @@ function showQuestion() {
   });
 }
 
+// 解答処理
 function selectAnswer(selected) {
   const current = gameQuestions[currentQuestion];
   const correct = current.answer;
-
-  // 空欄置換（半角カッコ限定）
   const sentenceWithWord = current.sentence.replace("(   )", correct);
 
-  // ボタン無効化
   document.querySelectorAll('.choice-btn').forEach(btn => btn.disabled = true);
 
   if (selected === correct) {
@@ -82,12 +90,8 @@ function selectAnswer(selected) {
     document.getElementById("fuseikai-sound").play();
   }
 
-  // 読み上げ
   speak(correct);
-  setTimeout(() => {
-    speak(sentenceWithWord);
-  }, 1000);
-
+  setTimeout(() => speak(sentenceWithWord), 1000);
   nextBtn.style.display = 'block';
 }
 
@@ -159,7 +163,7 @@ function restartGame() {
   currentQuestion = 0;
   score = 0;
   correctStreak = 0;
-  gameQuestions = shuffleArray(quizData).slice(0, QUESTIONS_PER_GAME);
+  gameQuestions = allQuizData.sort(() => Math.random() - 0.5).slice(0, QUESTIONS_PER_GAME);
   showQuestion();
   resultEl.innerHTML = '';
   restartBtn.style.display = 'none';
@@ -167,9 +171,23 @@ function restartGame() {
   document.getElementById("bgm").play();
 }
 
+// 初期化
 window.onload = () => {
   document.getElementById("bgm").volume = 0.1;
-  restartGame();
+
+  // 読み上げ対応（onvoiceschanged対策）
+  window.speechSynthesis.onvoiceschanged = () => speak("");
+
+  fetch("questions.fixed.json")
+    .then(res => res.json())
+    .then(data => {
+      allQuizData = data;
+      restartGame();
+    })
+    .catch(err => {
+      questionEl.innerHTML = "クイズデータの読み込みに失敗しました。";
+      console.error(err);
+    });
 
   document.body.addEventListener("click", function startAudioOnce() {
     document.getElementById("bgm").play();
