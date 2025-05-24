@@ -116,6 +116,16 @@ button#restart-btn {
   transition: background-color 0.3s;
 }
 
+/* === 「次へ」ボタンを画面下に固定表示 === */
+button#next-btn {
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
+/* === ホバー時 === */
 button#next-btn:hover,
 button#restart-btn:hover {
   background-color: #27ae60;
@@ -148,5 +158,13 @@ button#restart-btn:hover {
   button#restart-btn {
     font-size: 1rem;
     padding: 0.7rem 1.2rem;
+  }
+
+  button#next-btn {
+    position: fixed;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
   }
 }
